@@ -3,7 +3,7 @@
 # Domain Proyek
 
 <p>
-  <img src="" width="600">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/9105c443-daa8-4d75-9590-bf4085cf7cb2" width="600">
 	<figcaption>Gambar 1. Ilustrasi <i>Pesawat Terbang</i></figcaption>
 </p>
 
@@ -71,7 +71,7 @@ Outliers pada data ini akan ditangani menggunakan Robust Scaler pada library Sci
 ## Exploratory Data Analysis
 Langkah pertama dari EDA adalah melakukan univariate analyis yaitu dengan menampilkan histogram dari kolom numerik
 <p>
-  <img src="" alt="histogram " width="1000">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/42ffe26a-c2ab-4b12-b582-656caf6c45bd" alt="histogram " width="1000">
   <figcaption>Gambar 2. Histogram kolom data numerik</figcaption>
 </p>
 
@@ -79,7 +79,7 @@ Langkah pertama dari EDA adalah melakukan univariate analyis yaitu dengan menamp
 
 Selanjutnya menampilkan boxplot dari kolom numerik untuk melihat outliers yang terdapat pada data.
 <p>
-  <img src="" alt="boxplot" width="1000">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/a69aee6a-da35-4948-90b9-dfb379d5d179" alt="boxplot" width="1000">
   <figcaption>Gambar 3. Boxplot dari kolom data numerik</figcaption>
 </p>
 Terdapat banyak outliers pada kolom numerik, untuk menangani ini akan dilakukan standarisasi menggunakan Robust Scaler.
@@ -88,7 +88,7 @@ Terdapat banyak outliers pada kolom numerik, untuk menangani ini akan dilakukan 
 Selanjutnya dilihat korelasi antar fitur pada kolom numerik.
 
 <p>
-  <img src="" alt="correlation heatmap" width="1000">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/35cba508-1bee-4ec7-a56e-b06d190fde36" alt="correlation heatmap" width="1000">
   <figcaption>Gambar 4. Korelasi antar fitur data numerik</figcaption>
 </p>
 
@@ -98,27 +98,27 @@ berikut tabel nilai korelasi yang telah diurutkan dari yang terbesar hingga yang
 
 Tabel 1. Korelasi variabel fitur dengan variabel target
 
-| fitur         	                  | korelasi dengan satisfaction 	  |
+| fitur         	            | korelasi dengan satisfaction    |
 |-----------------------------------|---------------------------------|
-| satisfaction   	                  | 1.000000                      	|
-| Online boarding                   | 0.501749                      	|
-| Inflight entertainment            | 0.398234                      	|
-| Seat comfort     	                | 0.348829                      	|
-| On-board service    	            | 0.322205                      	|
-| Leg room service                  | 0.312424                      	|
-| Cleanliness                       | 0.307035                      	|
-| Flight Distance  	                | 0.298085                      	|
-| Inflight wifi service             | 0.283460                      	|
-| Baggage handling                  | 0.248680                      	|
-| Inflight service                  | 0.244918                      	|
-| Checkin service                   | 0.237252                      	|
-| Food and drink     	              | 0.211340                      	|
-| Ease of Online booking            | 0.168877                      	|
-| Age          	                    | 0.134091                      	|
-| Arrival Delay in Minutes          | 0.058187                      	|
-| Departure/Arrival time convenient | 0.054270                      	|
-| Departure Delay in Minutes   	    | 0.050740                      	|
-| Gate location       	            | 0.002793                      	|
+| satisfaction   	            | 1.000000                        |
+| Online boarding                   | 0.501749                        |
+| Inflight entertainment            | 0.398234                        |
+| Seat comfort     	            | 0.348829                        |
+| On-board service    	            | 0.322205                        |
+| Leg room service                  | 0.312424                        |
+| Cleanliness                       | 0.307035                        |
+| Flight Distance  	            | 0.298085                        |
+| Inflight wifi service             | 0.283460                        |
+| Baggage handling                  | 0.248680                        |
+| Inflight service                  | 0.244918                        |
+| Checkin service                   | 0.237252                        |
+| Food and drink     	            | 0.211340                        |
+| Ease of Online booking            | 0.168877                        |
+| Age          	                    | 0.134091                        |
+| Arrival Delay in Minutes          | 0.058187                        |
+| Departure/Arrival time convenient | 0.054270                        |
+| Departure Delay in Minutes   	    | 0.050740                        |
+| Gate location       	            | 0.002793                        |
 
 Dapat dilihat bahwa Online boarding adalah fitur yang memiliki korelasi tertinggi dengan satisfaction.
 
@@ -137,7 +137,7 @@ Algoritma machine learning yang akan digunakan pada project ini adalah *Support 
 ## SVM
 
 <p>
-  <img src="" alt="SVM" width="600">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/3921a46d-27f5-4964-a8df-61edd993b7ce" alt="SVM" width="600">
   <figcaption>Gambar 5. Ilustrasi SVM</figcaption>
 </p>
 
@@ -151,7 +151,7 @@ Dilakukan *hyperparameter tuning* pada algoritma SVM menggunakan *Grid Search* u
 ## Decision Tree
 
 <p>
-  <img src="" alt="decision tree" width="600">
+  <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/bc4f7a98-493e-4fdb-b1ad-d08e9f05c3a4" alt="decision tree" width="600">
 	<figcaption>Gambar 6. Ilustrasi <i>Decision Tree</i></figcaption>
 </p>
 
@@ -207,7 +207,6 @@ Nilai Metrik Evaluasi Algoritma *Decision Tree*:
 * **F1-score: 96%**
 
 
-
 Dari hasil evaluasi diatas dapat dilihat model SVM memiliki Recall yang lebih tinggi sebanyak 1% 
 
 Model SVM menghasilkan akurasi, presisi, F1-score yang sama dengan model Decision Tree. Tetapi model SVM memiliki keunggulan pada recall yang lebih besar dari model Decision Tree yaitu 96%. Hal ini menunjukkan bahwa model SVM memiliki performa sedikit lebih baik dari model Decision tree dan dapat melakukan klasifikasi lebih baik pada dataset Airline Customer Satisfaction kedalam 2 kelas yang tersedia.
@@ -220,5 +219,3 @@ Dari hasil project ini, dapat disimpulkan bahwa model SVM dengan parameter terba
 [1]	[Jiang, X., Zhang, Y., Li, Y. et al. Forecast and analysis of aircraft passenger satisfaction based on RF-RFE-LR model. Sci Rep 12, 11174 (2022). https://doi.org/10.1038/s41598-022-14566-3](https://www.nature.com/articles/s41598-022-14566-3)
 
 [2] 	[Park S-H, Kim M-Y, Kim Y-J, Park Y-H. A Deep Learning Approach to Analyze Airline Customer Propensities: The Case of South Korea. Applied Sciences. 2022; 12(4):1916. https://doi.org/10.3390/app12041916](https://www.mdpi.com/2076-3417/12/4/1916)
-#   a i r p l a n e - p a s s e n g e r - s a t i s f a c t i o n - p r e d i c t i o n  
- 
