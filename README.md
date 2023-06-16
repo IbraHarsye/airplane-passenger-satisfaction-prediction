@@ -69,7 +69,7 @@ Pada Data *training* dan data *testing*, terdapat beberapa kolom NaN atau missin
 Outliers pada data ini akan ditangani menggunakan Robust Scaler pada library Scikit-Learn.
 
 ## Exploratory Data Analysis
-Langkah pertama dari EDA adalah melakukan univariate analyis yaitu dengan menampilkan histogram dari kolom numerik
+Langkah pertama dari EDA adalah melakukan univariate analysis yaitu dengan menampilkan histogram dari kolom numerik
 <p>
   <img src="https://github.com/IbraHarsye/airplane-passenger-satisfaction-prediction/assets/56579824/42ffe26a-c2ab-4b12-b582-656caf6c45bd" alt="histogram " width="1000">
   <figcaption>Gambar 2. Histogram kolom data numerik</figcaption>
@@ -172,10 +172,10 @@ Metrik evaluasi ini Merupakan rasio prediksi Benar (positif dan negatif) dengan 
 $$akurasi = {TP + TN \\over TP + TN + FP + FN}.$$
 
 Dimana:
-*True Negative (TN): Model memprediksi data ada di kelas Negatif dan yang sebenarnya data memang ada di kelas Negatif.
-*True Postive (TP): Model memprediksi data ada di kelas Positif dan yang sebenarnya data memang ada di kelas Positif.
-*False Negative (FN): Model memprediksi data ada di kelas Negatif, namun yang sebenarnya data ada di kelas Positif.
-*False Positive (FP): Model memprediksi data ada di kelas Positif, namun yang sebenarnya data ada di kelas Negatif.
+* True Negative (TN): Model memprediksi data ada di kelas Negatif dan yang sebenarnya data memang ada di kelas Negatif.
+* True Postive (TP): Model memprediksi data ada di kelas Positif dan yang sebenarnya data memang ada di kelas Positif.
+* False Negative (FN): Model memprediksi data ada di kelas Negatif, namun yang sebenarnya data ada di kelas Positif.
+* False Positive (FP): Model memprediksi data ada di kelas Positif, namun yang sebenarnya data ada di kelas Negatif.
 
 ## 2. Precision
 Precision Merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan hasil yang diprediksi positif. Dalam konteks proyek ini, presisi mengukur seberapa baik model dalam mengklasifikasikan kepuasan pelanggan sebagai puas dan tidak puas/netral dengan benar.
@@ -212,7 +212,7 @@ Dari hasil evaluasi diatas dapat dilihat model SVM memiliki Recall yang lebih ti
 Model SVM menghasilkan akurasi, presisi, F1-score yang sama dengan model Decision Tree. Tetapi model SVM memiliki keunggulan pada recall yang lebih besar dari model Decision Tree yaitu 96%. Hal ini menunjukkan bahwa model SVM memiliki performa sedikit lebih baik dari model Decision tree dan dapat melakukan klasifikasi lebih baik pada dataset Airline Customer Satisfaction kedalam 2 kelas yang tersedia.
 
 # Kesimpulan
-Dari hasil project ini, dapat disimpulkan bahwa model SVM dengan parameter terbaik yang ditentukan melalui Grid Search merupakan pilihan terbaik untuk klasifikasi harga ponsel dalam proyek ini. SVM mampu menangani hubungan non-linier dengan baik dan memberikan kinerja yang lebih baik dalam hal akurasi klasifikasi.
+Dari hasil project machine learning yang telah dilakukan, dapat disimpulkan bahwa model SVM dengan parameter terbaik yang ditentukan melalui Grid Search CV merupakan model yang memiliki performa optimal dalam melakukan klasifikasi kepuasan pelanggan ke dalam 2 kategori yaitu satisfied dan neutral/disatisfied. Maka dengan ini perusahaan maskapai penerbangan dapat melakukan pertimbangan untuk melakukan perbaikan pelayanan mereka sesuai dengan prediksi yang dihasilkan.
 
 # Referensi
 
